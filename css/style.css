@@ -1,0 +1,172 @@
+/*=========== RESET ==========*/
+* {margin: 0; padding: 0; font-size: 100%; border: none; outline: none; font-weight: 300; box-sizing: border-box;
+font-family: 'Lato', sans-serif;}
+body {background-color: #f5f5f5;}
+a {text-decoration: none;}
+ul {list-style: none;}
+img {max-width: 100%;}
+/*=========== CONTAINER ==========*/
+.container {width: 100%; float: left; padding: 3% 4%; text-align: center;}
+/*=========== BG COLORS ==========*/
+.bg-gradient {background: linear-gradient(to right,#ce2e3c,#da6709);}
+.bg-black {background-color: #130400; }
+.bg-white {background-color: #fff;}
+/*=========== HELPERS ==========*/
+.radius {border-radius: 7px;}
+/* CABEÇALHO */
+.logo {width: 76px; height: 76px; float: left;  background: url(../img/logo-mobile.png) center center/76px no-repeat;
+font-size: 0; margin-top: -30px;}
+.btn-menu {width: 50px; height: 50px; float: right; margin-top: -16px; text-align: center; color: #fff; border-radius:56px; cursor: pointer;}
+.cabecalho  { background-color: #D3D3D3; height: 125px;}
+.br-menu-pag { height: 105px; }
+.menu li{ background-color: #D3D3D3; }
+/* MENU */
+.menu { display: none; width: 100%; height: 100%; position: fixed; font-size: 1.2rem; background-color: #000; top: 0; left: 0;}
+.btn-close {font-size: 1.5em; color: #fff; float: right; cursor: pointer; margin: 2% 3% 0 0;}
+.menu ul {width: 100%; float: left; text-align: center;  margin-top: -20px;}
+.menu li {padding: 1.5%;}
+.menu li a {font-size: 2em;  padding: 1.5% 3%; font-weight: 800; color: #fff; }
+.menu li a:hover {border:1px solid #da6709; color: #da6709;}
+
+/* BANNER */
+.banner {background: url(../img/logosalao.png) no-repeat fixed;height: 330px;  margin-top: -40px;}
+
+.title {width: 100%;}
+.title h2 {font-size: 2.5em; color: #fff; font-weight: 700;padding-top: 40px;}
+.title h3 {font-size: 1.5em; color: #fff; padding-top: 30px; fon}
+.buttons {width: 100%; margin-top: 2%; padding-top: 60px; }
+.buttons i {text-align: center; margin-top: 5px;}
+.btn {width: 300px; height: 50px; margin-top: 20px; padding: 3px; text-align: left; 
+font-size: 1rem; float: right;}
+.btn-cadastrar { font-size: 1em; text-align: center; font-weight: 400; }
+.btn-sobre {color:#130400; margin-top: 4%; font-weight: 400;}
+
+/* SERVIÇOS */
+.titulo-pag {text-align: center;}
+.titulo-pag h2{font-size: 30px; font-weight: 500; padding: 160px 0 20px 0;}
+.titulo-pag h4{font-size: 24px; font-weight: 400;}
+.servico {width: 50%;  text-align: left;  margin-bottom: 3%;}
+.servico img {border-radius: 7px 7px 0 0;}
+.inner {padding: 7%;}
+.inner a {font-size: 1.5em; color: #130400; font-weight: 700; }
+.inner h4 {font-size: 1.2em; color: #130400; margin-top: 2%; }
+.inner p {margin-top: 6%; color: #130400; line-height: 1.5em;}
+/* NEWSLETTER */
+.newsletter h2 {font-size: 1.5em; color: #fff; font-weight: 700;}
+.newsletter h3 {color: #fff;}
+.newsletter form {margin-top: 2%;}
+.newsletter input {width: 100%;  color: #fff; border: 1px solid rgba(255,255,255,0.3); padding: 5%; }
+.newsletter button {width: 100%;  color:#130400; padding: 5%; cursor: pointer; margin-top: 2%; }
+/* RODAPÉ */
+.social-icons a {font-size: 1.5em; color: rgba(255,255,255,0.7); margin-right: 3%;}
+.social-icons a:last-child {margin-right: 0;}
+.social-icons a:hover {color: rgb(255,255,255);}
+.copyright {color: rgba(255, 255, 255, 0.7); margin-top:2%;}
+/* 
+.cor-fundo { background-color: #d96f13; }*/
+
+/*.pagina contato e localização manutencao }*/
+.manuten h2{font-size: 100px; padding: 300px 0 250px 0;}
+
+/* ========== MOBILE FIRST ==========*/
+/* SMALL DEVICES - SMARTPHONES */
+@media (min-width: 300px) and (max-width: 479px) {   
+	.logo {margin-top: -7px; } 
+	.btn-menu { margin-top: 7px; } 
+	.menu { height: 70%; }
+	.menu ul {margin-top: 10px;  }
+	.menu ul li { background-color: #000; }
+	.banner h2{ margin-top: 40px; }
+	.banner .buttons .btn-cadastrar {display: none; }
+ 	.banner .buttons .btn-sobre {display: none;}
+	.servico {width: 100%; margin-top:  40px;}
+  }
+@media screen and (min-width: 480px)  {
+.logo {width: 214px; background: url(../img/logo.png) center center/214px no-repeat; padding: 50px 0 50px 0; margin-top: -20px;}
+.btn {font-size: 1rem; width: 160px; height: 33px; margin: 10px; text-align: center;}
+.btn-menu { margin-top: 3px;}
+	.menu { height: 70%; }
+	.menu ul {margin-top: 10px;  }
+	.menu ul li { background-color: #000; }
+.banner { margin-top: -30px;}
+.banner .buttons .btn-cadastrar {float: right; margin-right: 50px; }
+.banner .buttons .btn-sobre {float: left; margin-left: 50px; }
+.banner .buttons .btn-cadastrar:hover { background-color:  rgba(255,255,255,0.7);}
+.banner .buttons .btn-sobre:hover { background-color:  rgba(255,255,255,0.7);}
+
+.buttons { margin-top: -10px; }
+.servico {width: 100%; }
+
+.servico {margin-top: 40px;}
+}
+/* SMALL DEVICES - TABLETS*/
+@media screen and (min-width: 768px) {
+	.logo {margin-top: -30px;}
+	.btn-menu { margin-top: -5px; } 
+	.menu { height: 70%; }
+	.menu ul {margin-top: 10px;  }
+	.menu ul li { background-color: #000; }
+.btn {width: 170px; height: 40px; margin-top: 17px; font-size: 1.2em; text-align: center;}
+.banner { margin-top: -30px;}
+.banner .buttons .btn-cadastrar {float: right; margin-right: 150px; }
+.banner .buttons .btn-sobre {float: left; margin-left: 150px; }
+.buttons { margin-top: -20px; }
+.servico {width: 48%; float: left; margin-left: 1%; margin-right: 0;}
+.servico:nth-child(2){margin-right: 0;}
+.newsletter h2 {font-size: 2em;}
+.newsletter h3 {font-size: 1.5em;}
+.newsletter input {width: 70%; padding: 2%; float: left; margin-right: 1%;}
+.newsletter button {width: 29%; padding: 2%; float: right; margin-top: 0;}
+}
+/* MEDIUM DEVICES - TABLETS & DESKTOPS*/
+@media screen and (min-width: 960px) {
+.logo {margin-top: -40px;}
+.btn-menu { margin-top: -15px; } 
+.title {width: 70%; float: left; text-align: left;}
+.title h2 {font-size: 3em;}
+.title h3 {font-size: 2em;}
+.banner { margin-top: -30px;}
+.buttons {width: 30%; float: right; margin-top: 0; }
+.banner .buttons .btn-cadastrar {float: right; margin-right: auto; }
+.banner .buttons .btn-sobre {float: right; margin-right: auto; }
+
+
+.servico {width: 49%; }
+.servico:nth-child(2){margin-right: 0;}
+.servico:nth-child(3){margin-right: 0%;}
+.servico:nth-child(4){margin-right: 0;}
+.servico:nth-child(5){margin-right: 0%;}
+.servico:nth-child(6){margin-right: 0;}
+
+.newsletter input {width: 60%; float: none;}
+.newsletter button {width: 20%; float: none;}
+}
+
+@media (min-width: 1279px) and (max-width: 1990px) { 
+	/* recolhendo a barra menu preta*/
+	.menu ul li {background-color: #D3D3D3; margin-top: -30px;}
+}
+
+
+/* LARGE DEVICES - WIDE SCREENS*/
+@media screen and (min-width: 1280px) {
+	.logo { margin-top: -40px;}
+	.btn {font-size: 1.4em;}
+.btn-menu {display: none;}
+.btn-close {display: none;}
+.menu {width: auto; height: 56px; line-height: 56px; float: right; background-color: #D3D3D3; 
+display: block !important; position: static;}
+.menu li {padding: 0; float: left;}
+.menu li a {color:#130400; font-size: 1em; padding: 15px; }
+.menu li a:hover {border: none; color:#da6709; }
+
+.servico {width: 32%; }
+.servico:nth-child(2){margin-right: 0%;}
+.servico:nth-child(3){margin-right: 0;}
+.servico:nth-child(4){margin-right: 0%;}
+.servico:nth-child(5){margin-right: 0%;}
+.servico:nth-child(6){margin-right: 0;}
+}
+
+
+
